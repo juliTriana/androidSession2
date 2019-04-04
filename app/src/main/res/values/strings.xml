@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">doing Layot</string>
+
+    <string name="handstand_p">Handstand Pushups
+    </string>
+    <string name="to_prepare_">
+        To prepare the strength until one has built adequate balance.
+    </string>
+
+    <string name="skills_trai">
+
+        Skills\nTraining
+    </string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:background="@color/purple"
+             android:layout_height="match_parent"
+             tools:context=".fitnessui.HomeFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                       android:layout_height="match_parent">
+
+        <TextView
+                style="@style/Small"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/to_prepare_"
+                android:background="@drawable/menu"
+        />
+
+        <ImageView android:layout_width="63.3dp"
+                   android:layout_height="67.3dp"
+                   android:src="@drawable/ex_icon"
+                   android:scaleType="fitXY"
+                   android:layout_marginBottom="48.7dp"
+                   app:layout_constraintBottom_toTopOf="@id/cta"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+        />
+        <androidx.cardview.widget.CardView
+                android:id="@+id/cta"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:cardCornerRadius="5.3dp"
+                android:layout_marginBottom="32.7dp"
+                android:layout_width="213.3dp"
+                android:layout_height="53.3dp">
+
+            <TextView
+                    style="@style/Normal"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/handstand_p"
+            />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
